@@ -1,0 +1,70 @@
+ <div>
+<div class="container-fluid" style="height: 150px; background-color: #EDFFFB;">
+    <div class="d-flex flex-column align-items-center align-items-sm-start">
+    <div class="py-2">
+        <h3 class="d-none d-sm-inline text-primary">Total Amount</h3>
+    </div>
+</div>
+    <div class="row">
+        <div class="col">
+          <p class="text-muted">Flat (billion)</p>
+          <h3 class="d-none d-sm-inline text-primary">{{ datas[0].payment }}</h3>
+         
+        </div>
+
+        <div class="col">
+            <p class="text-muted">USDT</p>
+            <h3 class="d-none d-sm-inline text-primary">{{ datas[0].level }}</h3>
+        </div>
+
+        <div class="col">
+            <p class="text-muted">ETH</p>
+            <h3 class="d-none d-sm-inline text-primary">{{ datas[0].contract }}</h3>
+        </div>
+
+    </div>
+
+  </div>
+  <div>
+    <app-total-table></app-total-table>
+  </div>
+</div> 
+
+<table class="table">
+    <thead>
+      <tr>
+        <th class="col-lg-5">Payment</th>
+        <th class="col-lg-2">Level</th>
+        <th class="col-lg-5">Contract</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of datas">
+      <tr>
+        <td>{{ data.payment}}</td>
+        <td>{{ data.level }}</td>
+        <td>{{ data.contract}} </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+<div class="container">
+  
+
+  <div class="row">
+    <div class="col-12">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Total 45 items</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  
+

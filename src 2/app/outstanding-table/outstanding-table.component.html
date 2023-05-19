@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th class="col-lg-5">Name</th>
+        <th class="col-lg-2">Salary</th>
+        <th class="col-lg-5">Budget</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of datas">
+      <tr>
+        <td>{{ data.name }}</td>
+        <td>{{ data.salary }}</td>
+        <td>{{ data.budget1 }} {{ data.budget2 }}</td>
+      </tr>
+    </tbody>
+  </table>
